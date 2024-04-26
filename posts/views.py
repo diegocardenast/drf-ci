@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from .models import Post
 from .serializers import PostSerializer
+from drf_ci.permissions import IsOwnerOrReadOnly
 
 
 class PostList(APIView):
